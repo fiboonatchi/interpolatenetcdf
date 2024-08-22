@@ -1,0 +1,8 @@
+#!/bin/bash
+FILES=*.nc
+for fname in $FILES
+do
+	cdo remapnn,"grid_discription-0.5-CS.txt" $fname "intercs/${fname}_inter.nc"
+
+done
+
